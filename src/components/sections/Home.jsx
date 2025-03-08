@@ -32,7 +32,7 @@ export const Home = () => {
         </div>
 
         <div className="relative flex-shrink-0 ml-10">
-          <img src="public\professional-headshot.jpg" alt="Pinaki Professinal HeadShot" className="w-52 h-52 rounded-full object-cover border-4 border-[#A0ECD0]">
+          <img src="professional-headshot.jpg" alt="Pinaki Professinal HeadShot" className="w-52 h-52 rounded-full object-cover border-4 border-[#A0ECD0]">
           </img>
         </div>
       </div>
