@@ -5,9 +5,11 @@ import { Navbar } from './components/Navbar';
 import "./index.css";
 import { MobileMenu } from './components/MobileMenu';
 import { Home } from './components/sections/Home';
-import { About } from './components/sections/About';
-import { Projects } from './components/sections/Projects';
+import { Experience } from './components/sections/Experience';
+import { PersonalProjects } from './components/sections/PersonalProjects';
 import { Contacts } from './components/sections/Contacts'
+import { SocialLinks } from './components/SocialLinks';
+import { GroupProjects } from './components/sections/GroupProjects';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -15,18 +17,21 @@ function App() {
 
   return (
     <>
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/>}{" "}
-      <div className={`min-h-screen transition-opacity duration-700 ${
-        isLoaded ? "opacity-100" : "opacity-0"
-        } bg-black text-gray-100`}
-      >
+        <SocialLinks />
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-        <Home />
-        <About />
-        <Projects />
-        <Contacts />
-      </div>
+        {/* Left Section (Fixed) */}
+        <div className="w-1/3 min-h-screen fixed top-0 left-0 p-8 bg-black">
+          <Home />
+        </div>
+        <div className="w-2/3 ml-auto overflow-y-auto h-screen px-8 bg-black text-gray-100">
+          <Experience />
+          <PersonalProjects />
+          <div className="relative z-10">
+            <GroupProjects />
+          </div>
+          <Contacts />
+        </div>
     </>
   );
 }
