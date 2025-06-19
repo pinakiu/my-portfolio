@@ -5,7 +5,7 @@ const experiences = [
   {
     company: "Wells Fargo",
     role: "Software Engineer",
-    duration: "2023 - Present",
+    duration: "Jan 2023 - Apr 2025",
     details: [
       "Engineered APIs and microservices to optimize workflow efficiency, doubling productivity and reducing API response times by 30%.",
       "Developed Angular and C# features to streamline user interactions, automate notifications, and enhance data accessibility.", 

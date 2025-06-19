@@ -36,7 +36,7 @@ export const GroupProjects = () => {
     {
       title: "Senior Design Project",
       images: [
-        "/group-projects/senior-design-showcase.jpeg",
+        "/group-projects/senior-design/senior-design-showcase.jpeg",
       ],
       description: "Directed a team of 5 to develop an application analyzing customer sentiment of products and services."
     },
